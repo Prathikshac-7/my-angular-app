@@ -1,0 +1,54 @@
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+
+ 
+<header class="header">
+    <div class="logo">CAKESHOP</div>
+    <nav class="nav">
+      <ul class="nav-menu">
+        <li><a routerLink="/homepage">Home</a></li>
+        <li><a routerLink="/cakes">Cakes</a></li>
+        <li><a routerLink="/about">About</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <li><a routerLink="/cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+
+  <div class="homepage-container">
+    <section class="hero">
+      <p>Indulge in the finest cakes and pastries made just for you! Cakeshop has been serving sweet and delicious cakes for over a decade, offering personalized cakes for any occasion such as weddings and birthdays, using only the finest ingredients to create mouthwatering cakes and pastries.</p>
+    </section>
+  
+    <section class="content">
+      <!-- Card structure starts here -->
+      <div class="form-card">
+  <form class="cake-form">
+    <div class="form-group">
+      <label for="cakeName">Cake Name</label>
+      <input type="text" id="cakeName" [(ngModel)]="cakeDetails.name" name="cakeName" placeholder="Enter cake name">
+    </div>
+
+    <div class="form-group">
+      <label for="cakeDescription">Cake Description</label>
+      <textarea id="cakeDescription" [(ngModel)]="cakeDetails.description" name="cakeDescription" rows="4" placeholder="Enter cake description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="cakePrice">Cake Price</label>
+      <input type="text" id="cakePrice" [(ngModel)]="cakeDetails.price" name="cakePrice" placeholder="Enter cake price">
+    </div>
+
+    <div class="form-actions">
+      <button type="button" class="btn save-btn" (click)="saveDetails()">Save</button>
+    </div>
+  </form>
+</div>
+      <!-- Card structure ends here -->
+    </section>
+  </div>
+  
+ 
+  

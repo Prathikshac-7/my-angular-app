@@ -1,0 +1,96 @@
+/* Full-page background */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensures full viewport height */
+    overflow: hidden;
+    background: linear-gradient(to right, #080808, #4c4a44);
+}
+/* Login card */
+.login-card {
+    background: rgb(139, 134, 134);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 350px;
+}
+
+/* Login heading */
+.login-card h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Form styling */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* Label styling */
+.auth-form label {
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f4ebeb;
+    margin-bottom: 5px;
+}
+
+/* Input fields */
+.auth-form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #fcf9f9;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Login button */
+.auth-form button {
+    width: 100%;
+    padding: 12px;
+    background: #292927;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.auth-form button:hover {
+    background: #a17e0d;
+}
+
+.signup-link {
+    color: #6a11cb;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.signup-link:hover {
+    color: #c1921a;
+}
+
+
+.success-snackbar {
+    background-color: #4caf50 !important;
+    color: white !important;
+  }
+  
+  .error-snackbar {
+    background-color: #f44336 !important;
+    color: white !important;
+  }
+  
+
+

@@ -1,0 +1,60 @@
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+</head>
+<header class="header">
+    <div class="logo">CAKESHOP</div>
+    <nav class="nav">
+        <ul class="nav-menu">
+            <li><a routerLink="/homepage">Home</a></li>
+            <li><a routerLink="/homepage/cakes">Cakes</a></li>
+            <li><a routerLink="/about">About</a></li>
+            <li><a routerLink="/contact">Contact</a></li>
+            <li><a routerLink="/cart">Cart</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Content -->
+<div class="homepage-container">
+    <h2 class="cart-heading" >Your Cart</h2>
+
+    <button class="add-btn"  (click)="goToContactPage()">+</button>
+
+    <div *ngIf="cartItems.length > 0; else emptyCart" class="cart-container">
+        <table class="cart-table">
+            <thead>
+                <tr>
+                    <th>Cake Name</th>
+                    <th>Description</th>
+                    <th>Price</th>
+                    <th>Action</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let item of cartItems; let i = index">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.description }}</td>
+                    <td>₹{{ item.price }}</td>
+                    <td>
+                        <button class="edit-btn">
+                            <i class="edit-icon fas fa-edit" (click)="editItem(i)"></i>
+                        </button>
+                        <button class="delete-btn" (click)="deleteItem(i)">
+                            <i class="delete-icon fas fa-trash"></i>
+                        </button>
+                        <button class="view-btn" >
+                            <i class="view-icon fas fa-eye" mat-button (click)="viewItem(i)"></i> 
+                        </button>
+                    </td>
+                    
+                    
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <ng-template #emptyCart>
+        <p class="empty-cart-msg">Your cart is empty.</p>
+    </ng-template>
+</div>

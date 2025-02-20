@@ -1,0 +1,41 @@
+<header class="header">
+  <div class="logo">CAKESHOP</div>
+  <nav class="nav">
+    <ul class="nav-menu">
+      <li><a routerLink="/homepage">Home</a></li>
+      <li><a routerLink="/homepage/cakes">Cakes</a></li>
+      <li><a routerLink="/about">About</a></li> 
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/cart">Cart</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+<!-- Main Content -->
+<div class="homepage-container">
+  <router-outlet>
+  <section class="hero">
+    <h1>This is Schilers. Awesome Food Theme.</h1>
+    <p class="tagline">Purchase it and eat delicious Cakes.</p>
+    <div class="divider"></div>
+  </section>
+
+  <section class="content">
+    <div class="text">
+      <h2 class="gold-text">This is Schilers. Awesome Food Theme. <br> Purchase it and eat delicious Cakes.</h2>
+      <p>
+        At Cakeshop, we pride ourselves on not just baking cakes, but creating extraordinary masterpieces that capture the essence of every special occasion, from birthdays and weddings to anniversaries and corporate events, with our team of expert bakers and cake designers who meticulously handcraft each creation using only the finest ingredients, paying attention to every detail, from the texture and flavor to the intricate designs, ensuring that every bite delivers a memorable experience, all while offering personalized service to cater to the unique preferences of our clients, making each celebration not just delicious, but unforgettable.
+      </p>
+      <p>
+        Every cake we bake is a perfect blend of art and flavor, where each slice tells a story of creativity, passion, and the joy of celebrating life's sweetest moments.
+      </p>
+    </div>
+    <div class="image">
+      <img src="/cake1.jpg" alt="Cake Image">
+    </div>
+  </section>
+  </router-outlet>
+</div>
+
+

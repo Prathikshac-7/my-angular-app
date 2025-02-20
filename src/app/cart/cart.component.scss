@@ -1,0 +1,184 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #000; /* Black Background */
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; /* Dark Black */
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Navigation */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline-block;
+}
+
+.nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+.nav-menu li a:hover {
+    color: gold;
+}
+
+/* Cart Page */
+.homepage-container {
+    background-color: #000;
+    min-height: 100vh;
+    padding: 40px;
+    text-align: center;
+}
+
+.cart-heading {
+    font-size: 28px;
+    color: gold;
+    margin-bottom: 20px;
+}
+
+/* Cart Container */
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* Table Styles */
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #555;
+    padding: 12px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: gold;
+    color: black;
+    font-size: 18px;
+}
+
+.cart-table td {
+    background-color: #333;
+    color: white;
+}
+
+/* Empty Cart Message */
+.empty-cart-msg {
+    color: gray;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Action Buttons */
+.edit-btn, .delete-btn, .view-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 5px;
+    margin: 0 5px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.edit-btn:hover, .delete-btn:hover, .view-btn:hover {
+    transform: scale(1.1);
+}
+
+/* Edit Icon */
+.edit-icon {
+    color:#d0c411; /* Yellow */
+    transition: color 0.3s ease-in-out;
+}
+
+.edit-btn:hover .edit-icon {
+    color:#485253; /* Lighter Yellow on Hover */
+}
+
+/* Delete Icon */
+.delete-icon {
+    color: #d0c411; /* Red */
+    transition: color 0.3s ease-in-out;
+}
+
+.delete-btn:hover .delete-icon {
+    color:#485253;  /* Lighter Red on Hover */
+}
+
+/* View Icon */
+.view-icon {
+    color: #d0c411; /* Teal */
+    transition: color 0.3s ease-in-out;
+}
+
+.view-btn:hover .view-icon {
+    color: #485253; /* Lighter Teal on Hover */
+}
+
+/* Add New Cake Button */
+.add-btn {
+    background-color: #ffc107; /* Golden color */
+    color: #000; /* Dark text */
+    font-size: 18px;
+    padding: 12px 20px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 20px; /* Space between button and cart content */
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.add-btn:hover {
+    background-color: #e0a800; /* Lighter gold on hover */
+    color: white;
+}
+
+.add-btn:focus {
+    outline: none; /* Remove default focus outline */
+    box-shadow: 0 0 10px rgba(255, 193, 7, 0.7); /* Subtle glow effect */
+}
+
+.add-btn:active {
+    background-color: #d78b00; /* Slightly darker gold when clicked */
+}
+
+/* Snackbar Styles */
+.success-snackbar {
+    background-color: #4caf50 !important;
+    color: white !important;
+}
+
+.warning-snackbar {
+    background-color: #ff9800 !important;
+    color: white !important;
+}

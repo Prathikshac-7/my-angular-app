@@ -1,0 +1,27 @@
+<div class="signup-container">
+    <div class="signup-card">
+        <h2>Sign Up</h2>
+
+        <form>
+            <div class="input-group">
+                <label for="userName">User Name</label>
+                <input type="text" id="userName" placeholder="Enter your username" [(ngModel)]="signupObj.userName" name="userName" required>
+            </div>
+
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" [(ngModel)]="signupObj.email" name="email" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Enter your password" [(ngModel)]="signupObj.password" name="password" required>
+            </div>
+
+            <button type="submit" (click)="onSignup()">Sign Up</button>
+
+            <p class="login-text">
+                Already have an account? <span class="login-link" (click)="navigateToLogin()">Login</span></p>
+        </form>
+    </div>
+</div>

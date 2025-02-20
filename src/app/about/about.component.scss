@@ -1,0 +1,115 @@
+/* Global Styles */
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #000;
+    color: white;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111; 
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+  }
+  
+  /* Navigation */
+  .nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-menu li {
+    display: inline-block;
+  }
+  
+  .nav-menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: 0.3s;
+  }
+  
+  .nav-menu li a:hover {
+    color: gold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 80px 20px;
+    background-color: #000; /* Ensuring Background is Black */
+  }
+  
+  .hero h1 {
+    font-size: 48px;
+    font-weight: bold;
+  }
+  .hero, .content {
+    min-height: 300px; /* Add a minimum height to force section to be visible */
+    padding: 40px;
+  }
+  
+  .hero h1, .content p {
+    color: white; /* Ensure text is white */
+  }
+  
+  
+  .tagline {
+    font-size: 22px;
+    color: white;
+  }
+  
+  .divider {
+    width: 100px;
+    height: 2px;
+    background-color: gold;
+    margin: 20px auto;
+  }
+  
+  /* Main Content */
+  .content {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #000; /* Keeping Everything Black */
+  }
+  
+  .content p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .gold-text {
+    color: gold;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* Contact Info */
+  .contact-info {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #efe5e5;
+  }
+  
+  
+  
+  /* Ensuring all backgrounds are black */
+  .homepage-container {
+    background-color: #000;
+  }
+  
